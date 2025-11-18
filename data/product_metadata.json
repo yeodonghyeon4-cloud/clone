@@ -1,0 +1,38 @@
+[
+  {
+    "id": "nike-001",
+    "name": "Nike Air Force 1 '07 White",
+    "brand": "Nike",
+    "price": 129000,
+    "category": "shoes",
+    "product_url": "https://www.nike.com/kr/t/air-force-1-07",
+    "image_filename": "nike_airforce_white.jpg"
+  },
+  {
+    "id": "nike-002",
+    "name": "Nike Air Max 90 Black",
+    "brand": "Nike",
+    "price": 149000,
+    "category": "shoes",
+    "product_url": "https://www.nike.com/kr/t/air-max-90",
+    "image_filename": "nike_airmax_black.jpg"
+  },
+  {
+    "id": "adidas-001",
+    "name": "Adidas Stan Smith White Green",
+    "brand": "Adidas",
+    "price": 119000,
+    "category": "shoes",
+    "product_url": "https://www.adidas.co.kr/stan-smith",
+    "image_filename": "adidas_stansmith.jpg"
+  },
+  {
+    "id": "sample-placeholder-001",
+    "name": "Sample Product - Replace with Actual Data",
+    "brand": "Sample Brand",
+    "price": 100000,
+    "category": "shoes",
+    "product_url": "https://example.com/product",
+    "image_filename": "sample_product.jpg"
+  }
+]
