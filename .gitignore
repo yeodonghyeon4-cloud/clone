@@ -9,3 +9,8 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# Claude-Related files
+.claude
+CLAUDE.md
+SETUP_PROGRESS.md
