@@ -1,8 +1,8 @@
 [
   {
     "id": "nike-001",
-    "name": "Nike Air Force 1 '07 White",
-    "brand": "Nike",
+    "name": "나이키 에어포스 1 '07 화이트",
+    "brand": "나이키",
     "price": 129000,
     "category": "shoes",
     "product_url": "https://www.nike.com/kr/t/air-force-1-07",
@@ -10,8 +10,8 @@
   },
   {
     "id": "nike-002",
-    "name": "Nike Air Max 90 Black",
-    "brand": "Nike",
+    "name": "나이키 에어맥스 90 블랙",
+    "brand": "나이키",
     "price": 149000,
     "category": "shoes",
     "product_url": "https://www.nike.com/kr/t/air-max-90",
@@ -19,8 +19,8 @@
   },
   {
     "id": "adidas-001",
-    "name": "Adidas Stan Smith White Green",
-    "brand": "Adidas",
+    "name": "아디다스 스탠스미스 화이트 그린",
+    "brand": "아디다스",
     "price": 119000,
     "category": "shoes",
     "product_url": "https://www.adidas.co.kr/stan-smith",
@@ -28,8 +28,8 @@
   },
   {
     "id": "sample-placeholder-001",
-    "name": "Sample Product - Replace with Actual Data",
-    "brand": "Sample Brand",
+    "name": "샘플 제품 - 실제 데이터로 교체",
+    "brand": "샘플 브랜드",
     "price": 100000,
     "category": "shoes",
     "product_url": "https://example.com/product",
