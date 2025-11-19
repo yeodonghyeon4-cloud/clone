@@ -1,38 +1,47 @@
 [
   {
-    "id": "nike-001",
-    "name": "나이키 에어포스 1 '07 화이트",
-    "brand": "나이키",
-    "price": 129000,
-    "category": "shoes",
-    "product_url": "https://www.nike.com/kr/t/air-force-1-07",
-    "image_filename": "nike_airforce_white.jpg"
+    "id": "diesel_m_caddix_top_black_001",
+    "name": "diesel_m_caddix_top_black_001",
+    "brand": "DIESEL",
+    "price": 430000,
+    "category": "top",
+    "product_url": "https://kr.diesel.com/en/t-shirts-and-tops/m-caddix-top-black/A174500DLAX9XX.html",
+    "image_filename": "diesel_m_caddix_top_black_001.jpg"
   },
   {
-    "id": "nike-002",
-    "name": "나이키 에어맥스 90 블랙",
-    "brand": "나이키",
-    "price": 149000,
-    "category": "shoes",
-    "product_url": "https://www.nike.com/kr/t/air-max-90",
-    "image_filename": "nike_airmax_black.jpg"
+    "id": "diesel_m_caddix_top_black_002",
+    "name": "diesel_m_caddix_top_black_002",
+    "brand": "AliExpress",
+    "price": 9410,
+    "category": "top",
+    "product_url": "https://ko.aliexpress.com/item/1005009791056105.html?spm=a2g0o.imagesearchproductlist.main.6.555aOujfOujfB8&algo_pvid=3949473b-44d7-4918-b80e-0ae27f91b58b&algo_exp_id=3949473b-44d7-4918-b80e-0ae27f91b58b&pdp_ext_f=%7B%22order%22%3A%2213%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21KRW%2117692%219410%21%21%2111.73%216.24%21%40210123bc17635413532032428e35bd%2112000050172810055%21sea%21KR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A21238c4f%3Bm03_new_user%3A-29895%3BpisId%3A5000000192023066&curPageLogUid=WlaL0P9G1O0K&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005009791056105%7C_p_origin_prod%3A",
+    "image_filename": "diesel_m_caddix_top_black_002.jpg"
   },
   {
-    "id": "adidas-001",
-    "name": "아디다스 스탠스미스 화이트 그린",
-    "brand": "아디다스",
-    "price": 119000,
-    "category": "shoes",
-    "product_url": "https://www.adidas.co.kr/stan-smith",
-    "image_filename": "adidas_stansmith.jpg"
+    "id": "diesel_m_caddix_top_black_003",
+    "name": "diesel_m_caddix_top_black_003",
+    "brand": "AliExpress",
+    "price": 33400,
+    "category": "top",
+    "product_url": "https://ko.aliexpress.com/item/1005009511048318.html?spm=a2g0o.imagesearchproductlist.main.1.555aOujfOujfB8&algo_pvid=3949473b-44d7-4918-b80e-0ae27f91b58b&algo_exp_id=3949473b-44d7-4918-b80e-0ae27f91b58b&pdp_ext_f=%7B%22order%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21KRW%2143377%2133400%21%21%21204.58%21157.52%21%40210123bc17635413532032428e35bd%2112000049325821323%21sea%21KR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A21238c4f%3Bm03_new_user%3A-29895&curPageLogUid=BhSHpDbS0jev&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005009511048318%7C_p_origin_prod%3A",
+    "image_filename": "diesel_m_caddix_top_black_003.jpg"
   },
   {
-    "id": "sample-placeholder-001",
-    "name": "샘플 제품 - 실제 데이터로 교체",
-    "brand": "샘플 브랜드",
-    "price": 100000,
-    "category": "shoes",
-    "product_url": "https://example.com/product",
-    "image_filename": "sample_product.jpg"
+    "id": "diesel_m_caddix_top_black_004",
+    "name": "diesel_m_caddix_top_black_004",
+    "brand": "AliExpress",
+    "price": 19400,
+    "category": "top",
+    "product_url": "https://ko.aliexpress.com/item/1005008532665930.html?spm=a2g0o.imagesearchproductlist.main.2.555aOujfOujfB8&algo_pvid=3949473b-44d7-4918-b80e-0ae27f91b58b&algo_exp_id=3949473b-44d7-4918-b80e-0ae27f91b58b&pdp_ext_f=%7B%22order%22%3A%22-1%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21KRW%2138796%2119400%21%21%2125.72%2112.86%21%40210123bc17635413532032428e35bd%2112000045594716229%21sea%21KR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A21238c4f%3Bm03_new_user%3A-29895&curPageLogUid=DD90Nf2Bo2Xj&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005008532665930%7C_p_origin_prod%3A",
+    "image_filename": "diesel_m_caddix_top_black_004.jpg"
+  },
+  {
+    "id": "diesel_m_caddix_top_black_005",
+    "name": "diesel_m_caddix_top_black_005",
+    "brand": "AliExpress",
+    "price": 7012,
+    "category": "top",
+    "product_url": "https://ko.aliexpress.com/item/1005009515303808.html?spm=a2g0o.imagesearchproductlist.main.13.555aOujfOujfB8&algo_pvid=3949473b-44d7-4918-b80e-0ae27f91b58b&algo_exp_id=3949473b-44d7-4918-b80e-0ae27f91b58b&pdp_ext_f=%7B%22order%22%3A%225%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21KRW%2114148%217012%21%21%219.38%214.65%21%40210123bc17635413532032428e35bd%2112000049338136106%21sea%21KR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A21238c4f%3Bm03_new_user%3A-29895%3BpisId%3A5000000192023066&curPageLogUid=n2xezlgpLds8&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005009515303808%7C_p_origin_prod%3A",
+    "image_filename": "diesel_m_caddix_top_black_005.jpg"
   }
 ]
