@@ -43,5 +43,59 @@
     "category": "top",
     "product_url": "https://ko.aliexpress.com/item/1005009515303808.html?spm=a2g0o.imagesearchproductlist.main.13.555aOujfOujfB8&algo_pvid=3949473b-44d7-4918-b80e-0ae27f91b58b&algo_exp_id=3949473b-44d7-4918-b80e-0ae27f91b58b&pdp_ext_f=%7B%22order%22%3A%225%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21KRW%2114148%217012%21%21%219.38%214.65%21%40210123bc17635413532032428e35bd%2112000049338136106%21sea%21KR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A21238c4f%3Bm03_new_user%3A-29895%3BpisId%3A5000000192023066&curPageLogUid=n2xezlgpLds8&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005009515303808%7C_p_origin_prod%3A",
     "image_filename": "diesel_m_caddix_top_black_005.jpg"
+  },
+  {
+    "id": "UGG-001",
+    "name": "여성용 태즈먼 2세",
+    "brand": "UGG",
+    "price": 125000,
+    "category": "shoes",
+    "product_url": "https://www.ugg.com/women-slippers/tasman-ii/1174470.html",
+    "image_filename": "UGG_001.jpg"
+  },
+  {
+    "id": "UGG-002",
+    "name": "Comwarm 겨울 모피 여성 슬리퍼 미끄럼 방지 실내 슬라이드 두꺼운 밑창 코튼 슬라이드 퍼지 아늑한 따뜻한 야외 여성 슬리퍼",
+    "brand": "AliExpress",
+    "price": 9912,
+    "category": "shoes",
+    "product_url": "https://ko.aliexpress.com/item/1005009768780889.html?gatewayAdapt=glo2kor",
+    "image_filename": "UGG_002.jpg"
+  },
+  {
+    "id": "UGG-003",
+    "name": "(1+1/총 2켤레세트) 포그스웨이드 털슬리퍼 거실화겸용 / 2개옵션 구매시 기모양말 5켤레 증정",
+    "brand": "Gmarket",
+    "price": 39600,
+    "category": "shoes",
+    "product_url": "https://item.gmarket.co.kr/Item?goodsCode=4254151704",
+    "image_filename": "UGG_003.jpg"
+  },
+  {
+    "id": "UGG-004",
+    "name": "실내외 따뜻함을 위한 두꺼운 겨울 슬리퍼",
+    "brand": "TEMU",
+    "price": 6008,
+    "category": "shoes",
+    "product_url": "https://www.temu.com/kr/product-g-601099642304489.html",
+    "image_filename": "UGG_004.jpg"
+  },
+  {
+    "id": "UGG-005",
+    "name": "여성용 겨울 슬리퍼 - 부드러운 플러시 실내/외 하우스 슈즈, 쿠션 EVA 밑창, /브라운 - 가볍고 따뜻한 슬립온, 집, 사무실용",
+    "brand": "TEMU",
+    "price": 3518,
+    "category": "shoes",
+    "product_url": "https://www.temu.com/kr/product-g-601101444305111.html",
+    "image_filename": "UGG_005.jpg"
+  },
+  {
+    "id": "UGG-006",
+    "name": "[당일출고] 천연 소가죽 통굽 5cm 울트라 숏어그 반목 기본 겨울 털 부츠",
+    "brand": "ZIGZAG",
+    "price": 55000,
+    "category": "shoes",
+    "product_url": "https://zigzag.kr/catalog/products/151538007",
+    "image_filename": "UGG_006.jpg"
   }
 ]

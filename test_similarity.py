@@ -6,7 +6,7 @@ import requests
 import sys
 
 API_URL = "http://localhost:5001/api/search"
-TEST_IMAGE = "data/product_images/diesel_m_caddix_top_black_001.jpg"
+TEST_IMAGE = "data/product_images/UGG_004.jpg"
 
 def test_similarity_search():
     """Test image similarity search with an existing product image."""

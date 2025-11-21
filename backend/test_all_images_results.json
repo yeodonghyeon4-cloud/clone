@@ -1,0 +1,263 @@
+{
+  "model": "clip-ViT-B-16",
+  "total_images": 11,
+  "top1_accuracy": 100.0,
+  "top3_accuracy": 100.0,
+  "diesel_top1_accuracy": 100.0,
+  "ugg_top1_accuracy": 100.0,
+  "detailed_results": [
+    {
+      "query": "UGG_001.jpg",
+      "category": "ugg",
+      "top3_matches": [
+        {
+          "name": "UGG_003.jpg",
+          "category": "ugg",
+          "similarity": 0.7318072319030762
+        },
+        {
+          "name": "UGG_005.jpg",
+          "category": "ugg",
+          "similarity": 0.721713125705719
+        },
+        {
+          "name": "UGG_002.jpg",
+          "category": "ugg",
+          "similarity": 0.7063275575637817
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "UGG_002.jpg",
+      "category": "ugg",
+      "top3_matches": [
+        {
+          "name": "UGG_003.jpg",
+          "category": "ugg",
+          "similarity": 0.8376271724700928
+        },
+        {
+          "name": "UGG_005.jpg",
+          "category": "ugg",
+          "similarity": 0.8098434209823608
+        },
+        {
+          "name": "UGG_004.jpg",
+          "category": "ugg",
+          "similarity": 0.7912836074829102
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "UGG_003.jpg",
+      "category": "ugg",
+      "top3_matches": [
+        {
+          "name": "UGG_004.jpg",
+          "category": "ugg",
+          "similarity": 0.8589400053024292
+        },
+        {
+          "name": "UGG_005.jpg",
+          "category": "ugg",
+          "similarity": 0.8577382564544678
+        },
+        {
+          "name": "UGG_002.jpg",
+          "category": "ugg",
+          "similarity": 0.8376271724700928
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "UGG_004.jpg",
+      "category": "ugg",
+      "top3_matches": [
+        {
+          "name": "UGG_005.jpg",
+          "category": "ugg",
+          "similarity": 0.8799702525138855
+        },
+        {
+          "name": "UGG_003.jpg",
+          "category": "ugg",
+          "similarity": 0.8589400053024292
+        },
+        {
+          "name": "UGG_002.jpg",
+          "category": "ugg",
+          "similarity": 0.7912836074829102
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "UGG_005.jpg",
+      "category": "ugg",
+      "top3_matches": [
+        {
+          "name": "UGG_004.jpg",
+          "category": "ugg",
+          "similarity": 0.8799702525138855
+        },
+        {
+          "name": "UGG_003.jpg",
+          "category": "ugg",
+          "similarity": 0.8577382564544678
+        },
+        {
+          "name": "UGG_002.jpg",
+          "category": "ugg",
+          "similarity": 0.8098434209823608
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "UGG_006.jpg",
+      "category": "ugg",
+      "top3_matches": [
+        {
+          "name": "UGG_003.jpg",
+          "category": "ugg",
+          "similarity": 0.8288846015930176
+        },
+        {
+          "name": "UGG_004.jpg",
+          "category": "ugg",
+          "similarity": 0.7768436074256897
+        },
+        {
+          "name": "UGG_005.jpg",
+          "category": "ugg",
+          "similarity": 0.7689934968948364
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "diesel_m_caddix_top_black_001.jpg",
+      "category": "diesel",
+      "top3_matches": [
+        {
+          "name": "diesel_m_caddix_top_black_004.jpg",
+          "category": "diesel",
+          "similarity": 0.6289809942245483
+        },
+        {
+          "name": "UGG_003.jpg",
+          "category": "ugg",
+          "similarity": 0.6134352087974548
+        },
+        {
+          "name": "UGG_004.jpg",
+          "category": "ugg",
+          "similarity": 0.5950043797492981
+        }
+      ],
+      "correct_in_top3": 1,
+      "first_match_correct": true
+    },
+    {
+      "query": "diesel_m_caddix_top_black_002.jpg",
+      "category": "diesel",
+      "top3_matches": [
+        {
+          "name": "diesel_m_caddix_top_black_005.jpg",
+          "category": "diesel",
+          "similarity": 0.8984118700027466
+        },
+        {
+          "name": "diesel_m_caddix_top_black_004.jpg",
+          "category": "diesel",
+          "similarity": 0.7094801664352417
+        },
+        {
+          "name": "diesel_m_caddix_top_black_003.jpg",
+          "category": "diesel",
+          "similarity": 0.6761419177055359
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "diesel_m_caddix_top_black_003.jpg",
+      "category": "diesel",
+      "top3_matches": [
+        {
+          "name": "diesel_m_caddix_top_black_004.jpg",
+          "category": "diesel",
+          "similarity": 0.6961153745651245
+        },
+        {
+          "name": "diesel_m_caddix_top_black_005.jpg",
+          "category": "diesel",
+          "similarity": 0.6762412190437317
+        },
+        {
+          "name": "diesel_m_caddix_top_black_002.jpg",
+          "category": "diesel",
+          "similarity": 0.6761419177055359
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "diesel_m_caddix_top_black_004.jpg",
+      "category": "diesel",
+      "top3_matches": [
+        {
+          "name": "diesel_m_caddix_top_black_002.jpg",
+          "category": "diesel",
+          "similarity": 0.7094801664352417
+        },
+        {
+          "name": "diesel_m_caddix_top_black_003.jpg",
+          "category": "diesel",
+          "similarity": 0.6961153745651245
+        },
+        {
+          "name": "diesel_m_caddix_top_black_005.jpg",
+          "category": "diesel",
+          "similarity": 0.6912049055099487
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    },
+    {
+      "query": "diesel_m_caddix_top_black_005.jpg",
+      "category": "diesel",
+      "top3_matches": [
+        {
+          "name": "diesel_m_caddix_top_black_002.jpg",
+          "category": "diesel",
+          "similarity": 0.8984118700027466
+        },
+        {
+          "name": "diesel_m_caddix_top_black_004.jpg",
+          "category": "diesel",
+          "similarity": 0.6912049055099487
+        },
+        {
+          "name": "diesel_m_caddix_top_black_003.jpg",
+          "category": "diesel",
+          "similarity": 0.6762412190437317
+        }
+      ],
+      "correct_in_top3": 3,
+      "first_match_correct": true
+    }
+  ]
+}
