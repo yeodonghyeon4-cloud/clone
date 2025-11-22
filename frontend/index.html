@@ -31,24 +31,35 @@
 
             <section id="upload-section">
                 <div class="drop-area" id="dropArea">
-                    <input type="file" id="imageUpload" accept="image/jpeg, image/png, image/webp" hidden>
-                    <i class="fas fa-upload fa-3x"></i>
+                    <input type="file" id="imageUpload" accept="image/jpeg, image/png, image/webp" hidden aria-label="제품 이미지 업로드">
+                    <i class="fas fa-upload fa-3x" aria-hidden="true"></i>
                     <p>이미지를 드래그하거나 클릭하여 업로드</p>
                     <p class="support-text">JPG, PNG, WEBP 형식 지원</p>
-                    <label for="imageUpload" class="file-select-btn">파일 선택</label>
+                    <label for="imageUpload" class="file-select-btn" tabindex="0">파일 선택</label>
+                </div>
+                <div id="imagePreview" class="hidden">
+                    <img id="previewImage" src="" alt="미리보기 이미지">
+                    <div class="preview-info">
+                        <p id="fileName"></p>
+                        <p id="fileSize"></p>
+                    </div>
+                    <button id="removeImage" class="remove-btn" aria-label="이미지 제거">
+                        <i class="fas fa-times"></i> 이미지 변경
+                    </button>
                 </div>
             </section>
 
-            <button id="searchButton" >AI 유사 상품 검색 시작</button>
+            <button id="searchButton" disabled aria-label="AI 유사 상품 검색 시작">AI 유사 상품 검색 시작</button>
 
-            <div id="loadingOverlay" class="hidden" >
+            <div id="loadingOverlay" class="hidden" role="status" aria-live="polite">
                  <div id="loadingSpinner">
-                    <i class="fas fa-spinner fa-spin"></i>
+                    <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
                     <p>유사 상품을 분석 중입니다... 잠시만 기다려주세요.</p>
                  </div>
             </div>
         </main>
     </div>
 
-    </body>
+    <script src="app.js"></script>
+</body>
 </html>

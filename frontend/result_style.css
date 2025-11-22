@@ -1,22 +1,30 @@
+/* --------------------
+   1. 기본 설정 및 레이아웃
+   -------------------- */
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
-    background-color: #f7f9fc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+    background: linear-gradient(135deg, #f7f9fc 0%, #e8f1f8 100%);
     color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1400px;
     background-color: #fff;
-    padding: 20px 40px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 30px 50px 50px;
+    margin: 30px 0;
+    box-shadow: 0 4px 20px rgba(18, 61, 96, 0.08);
+    border-radius: 16px;
 }
 
 /* --------------------
@@ -26,87 +34,145 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    padding: 15px 0 20px;
+    border-bottom: 2px solid #f0f4f8;
     margin-bottom: 30px;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 800;
     color: #123D60;
     display: flex;
     align-items: baseline;
+    gap: 8px;
+}
+
+.ko-name {
+    letter-spacing: -0.5px;
 }
 
 .en-name {
-    font-size: 0.7em;
+    font-size: 0.65em;
     color: #31A9DB;
-    margin-left: 5px;
-    font-weight: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .slogan {
-    font-size: 0.9em;
+    font-size: 0.45em;
     font-weight: 500;
-    color: #777;
-    margin-left: 10px;
+    color: #7a8a99;
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    color: #666;
-    margin-left: 20px;
+    color: #5a6c7d;
     font-size: 0.9em;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #f0f7ff;
+    color: #123D60;
 }
 
 .back-btn {
-    color: #31A9DB; /* 새로운 검색 버튼 강조 */
-    font-weight: bold;
+    color: #fff;
+    background-color: #31A9DB;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    background-color: #123D60;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(49, 169, 219, 0.3);
 }
 
 /* --------------------
    3. 메인 타이틀 및 레이아웃
    -------------------- */
 main h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 700;
-    color: #123D60;
+    color: #1a2332;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
-    color: #555;
+    color: #5a6c7d;
+    font-size: 1.05em;
     margin-bottom: 30px;
-    border-bottom: 2px solid #31A9DB;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #31A9DB;
 }
 
 /* 핵심: Flexbox를 이용한 좌우 배치 */
 .results-layout {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     margin-top: 40px;
 }
 
 .search-image-area {
-    width: 30%; /* 검색 이미지 영역 */
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 32%;
+    padding: 25px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fcff 100%);
+    border: 2px solid #e8f1f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(18, 61, 96, 0.06);
+    height: fit-content;
+    position: sticky;
+    top: 30px;
 }
 
 .product-list-area {
-    width: 70%; /* 결과 목록 영역 */
-    padding: 20px 0;
+    width: 68%;
+    padding: 0;
 }
 
-.search-image-area h3, .product-list-area h3 {
+.search-image-area h3 {
     color: #123D60;
-    font-size: 1.2em;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-bottom: 2px solid #e8f1f8;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.product-list-area h3 {
+    color: #123D60;
+    font-size: 1.3em;
+    font-weight: 700;
+    border-bottom: 2px solid #e8f1f8;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#resultCount {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #31A9DB;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 2px solid #31A9DB;
 }
 
 /* --------------------
@@ -114,20 +180,35 @@ main h1 {
    -------------------- */
 #searchedImage {
     width: 100%;
-    max-height: 350px;
+    overflow: hidden;
+    border: 2px solid #e8f1f8;
+    border-radius: 12px;
+    margin: 0 0 20px 0;
+    background: white;
+}
+
+#searchedImage img {
+    width: 100%;
+    max-height: 400px;
     object-fit: contain;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 15px 0;
+    display: block;
 }
 
 #resultSummary {
-    padding: 10px;
-    background-color: #f0f7ff;
-    border-left: 5px solid #31A9DB;
-    font-size: 0.9em;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
+    border-left: 4px solid #31A9DB;
+    border-radius: 8px;
+    font-size: 0.95em;
     color: #123D60;
-    margin-top: 15px;
+    margin-top: 20px;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(49, 169, 219, 0.1);
+}
+
+#resultSummary strong {
+    color: #123D60;
+    font-weight: 700;
 }
 
 /* --------------------
@@ -135,68 +216,323 @@ main h1 {
    -------------------- */
 #resultsGrid {
     display: grid;
-    /* 화면 크기에 따라 2열 또는 3열로 유동적 배치 */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 .product-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 2px solid #e8f1f8;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
+    background: white;
+    box-shadow: 0 4px 12px rgba(18, 61, 96, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(18, 61, 96, 0.12);
+    border-color: #31A9DB;
 }
 
-.product-card img {
+.product-image {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fcff;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-image:hover {
+    background: #e8f4ff;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
 }
 
 .product-info {
     padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-info h4 {
     margin-top: 0;
-    font-size: 1.1em;
-    color: #333;
-    height: 2.8em; /* 2줄 고정 */
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #1a2332;
+    height: 2.8em;
     overflow: hidden;
+    line-height: 1.4em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* 유사도 점수 섹션 */
+.similarity-section {
+    margin-bottom: 15px;
+}
+
+.similarity-label {
+    font-size: 0.85em;
+    color: #7a8a99;
+    margin-bottom: 6px;
+    font-weight: 500;
 }
 
 .similarity-score {
-    font-weight: bold;
-    color: #31A9DB; /* 유사도 점수: 밝은 파란색 */
+    font-weight: 700;
+    color: #31A9DB;
     font-size: 1.1em;
-}
-
-.price {
-    font-size: 1.3em;
-    color: #DC3545; /* 최저가: 빨간색 */
-    font-weight: 800;
-    margin: 5px 0 10px 0;
-}
-
-.buy-btn {
     display: block;
-    text-align: center;
-    background-color: #123D60;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    margin-bottom: 6px;
 }
 
-.buy-btn:hover {
-    background-color: #31A9DB;
+/* 유사도 점수 배지 */
+.similarity-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 16px;
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.similarity-badge.excellent {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.similarity-badge.very-good {
+    background: linear-gradient(135deg, #31A9DB 0%, #17a2b8 100%);
+    color: white;
+}
+
+.similarity-badge.good {
+    background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+    color: white;
+}
+
+.similarity-badge.fair {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    color: white;
+}
+
+/* 유사도 프로그레스 바 */
+.similarity-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #e8f1f8;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.similarity-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.6s ease;
+    background: linear-gradient(90deg, #31A9DB 0%, #17a2b8 100%);
+}
+
+.similarity-bar-fill.excellent {
+    background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+}
+
+.similarity-bar-fill.very-good {
+    background: linear-gradient(90deg, #31A9DB 0%, #17a2b8 100%);
+}
+
+.similarity-bar-fill.good {
+    background: linear-gradient(90deg, #ffc107 0%, #fd7e14 100%);
+}
+
+.similarity-bar-fill.fair {
+    background: linear-gradient(90deg, #6c757d 0%, #495057 100%);
+}
+
+/* 가격 정보 */
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #DC3545;
+    font-weight: 800;
+    margin: 0;
+}
+
+.product-brand {
+    font-size: 0.75em;
+    color: #7a8a99;
+    font-weight: 500;
+}
+
+/* Remove buy button - image is now clickable */
+
+/* 순위 배지 */
+.rank-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #123D60 0%, #0f2d47 100%);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.95em;
+    box-shadow: 0 4px 12px rgba(18, 61, 96, 0.4);
+    z-index: 10;
+}
+
+.rank-badge.top-1 {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #1a2332;
+}
+
+.rank-badge.top-2 {
+    background: linear-gradient(135deg, #C0C0C0 0%, #A8A8A8 100%);
+    color: #1a2332;
+}
+
+.rank-badge.top-3 {
+    background: linear-gradient(135deg, #CD7F32 0%, #B8621B 100%);
+    color: white;
+}
+
+/* --------------------
+   반응형 디자인 (모바일)
+   -------------------- */
+@media (max-width: 1024px) {
+    .results-layout {
+        flex-direction: column;
+    }
+
+    .search-image-area,
+    .product-list-area {
+        width: 100%;
+    }
+
+    .search-image-area {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    #resultsGrid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px 25px 35px;
+        margin: 15px 0;
+        border-radius: 12px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.3em;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 0.95em;
+    }
+
+    .results-layout {
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .search-image-area {
+        padding: 20px;
+    }
+
+    #searchedImage img {
+        max-height: 300px;
+    }
+
+    #resultsGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo .slogan {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+
+    .search-image-area {
+        padding: 15px;
+    }
+
+    #searchedImage img {
+        max-height: 250px;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-price {
+        font-size: 1.1em;
+    }
+
+    .product-image {
+        height: 160px;
+    }
 }

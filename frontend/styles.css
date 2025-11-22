@@ -1,24 +1,30 @@
 /* --------------------
    1. 기본 설정 및 레이아웃
    -------------------- */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
-    background-color: #f7f9fc; /* 연한 배경색 */
+    font-family: -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+    background: linear-gradient(135deg, #f7f9fc 0%, #e8f1f8 100%);
     color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     background-color: #fff;
-    padding: 20px 40px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 30px 50px;
+    margin: 30px 0;
+    box-shadow: 0 4px 20px rgba(18, 61, 96, 0.08);
+    border-radius: 16px;
 }
 
 /* --------------------
@@ -28,110 +34,259 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    padding: 15px 0 20px;
+    border-bottom: 2px solid #f0f4f8;
+    margin-bottom: 10px;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: 800;
-    color: #123D60; /* 로고: 진한 남색 */
+    color: #123D60;
     display: flex;
     align-items: baseline;
+    gap: 8px;
+}
+
+.ko-name {
+    letter-spacing: -0.5px;
 }
 
 .en-name {
-    font-size: 0.7em;
-    color: #31A9DB; /* ZABATDA: 밝은 파란색 */
-    margin-left: 5px;
-    font-weight: bold;
+    font-size: 0.65em;
+    color: #31A9DB;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .slogan {
-    font-size: 0.9em;
+    font-size: 0.45em;
     font-weight: 500;
-    color: #777;
-    margin-left: 10px;
+    color: #7a8a99;
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    color: #666;
-    margin-left: 20px;
+    color: #5a6c7d;
     font-size: 0.9em;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #f0f7ff;
+    color: #123D60;
 }
 
 .signup-btn {
-    color: #123D60;
-    font-weight: bold;
+    color: #fff;
+    background-color: #31A9DB;
+    font-weight: 600;
+}
+
+.signup-btn:hover {
+    background-color: #123D60;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(49, 169, 219, 0.3);
 }
 
 /* --------------------
    3. 메인 타이틀 영역
    -------------------- */
+main {
+    padding-top: 20px;
+}
+
 main h1 {
     text-align: center;
-    margin-top: 40px;
-    font-size: 2.2em;
+    margin: 40px auto 20px;
+    font-size: 2.4em;
     font-weight: 700;
+    color: #1a2332;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    max-width: 900px;
 }
 
 .highlight {
-    color: #DC3545; /* 최저가: 빨간색 계열로 강조 */
+    color: #DC3545;
     font-weight: 800;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: rgba(220, 53, 69, 0.15);
+    z-index: -1;
+    border-radius: 2px;
 }
 
 .subtitle {
     text-align: center;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    color: #5a6c7d;
+    font-size: 1.05em;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* --------------------
    4. 이미지 업로드 영역 (Drop Area)
    -------------------- */
+#upload-section {
+    margin: 40px auto;
+}
+
 .drop-area {
-    border: 2px dashed #31A9DB; /* 테두리: 밝은 파란색 */
-    border-radius: 12px;
-    padding: 60px 20px;
+    border: 3px dashed #b8d9ec;
+    border-radius: 16px;
+    padding: 70px 40px;
     text-align: center;
     cursor: pointer;
-    transition: border-color 0.3s;
+    transition: all 0.3s ease;
     margin: 20px auto;
-    max-width: 600px;
-    background-color: #fff;
+    max-width: 650px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fcff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.drop-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(49, 169, 219, 0.05) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .drop-area:hover {
-    border-color: #123D60; /* 호버 시 진한 남색 */
+    border-color: #31A9DB;
+    background: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(49, 169, 219, 0.15);
+}
+
+.drop-area:hover::before {
+    opacity: 1;
+}
+
+.drop-area.drag-over {
+    border-color: #123D60;
+    background: #e8f4ff;
+    border-width: 3px;
+}
+
+.drop-area p {
+    margin: 15px 0;
+    color: #5a6c7d;
+    font-size: 1.1em;
 }
 
 .fa-upload {
     color: #31A9DB;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.drop-area:hover .fa-upload {
+    transform: translateY(-5px);
+    color: #123D60;
 }
 
 .file-select-btn {
-    background-color: #31A9DB; /* 버튼 배경: 밝은 파란색 */
+    background: linear-gradient(135deg, #31A9DB 0%, #2a8fc4 100%);
     color: white;
-    padding: 10px 30px;
-    border-radius: 4px;
+    padding: 14px 40px;
+    border-radius: 8px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 25px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 12px rgba(49, 169, 219, 0.3);
 }
 
 .file-select-btn:hover {
-    background-color: #123D60; /* 호버 시 진한 남색 */
+    background: linear-gradient(135deg, #123D60 0%, #0f2d47 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(18, 61, 96, 0.4);
+}
+
+.file-select-btn:active {
+    transform: translateY(0);
 }
 
 .support-text {
-    font-size: 0.8em;
-    color: #999;
-    margin-bottom: 15px;
+    font-size: 0.85em;
+    color: #99a8b5;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* 이미지 미리보기 */
+#imagePreview {
+    max-width: 650px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border: 2px solid #e8f1f8;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(18, 61, 96, 0.08);
+}
+
+#previewImage {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.remove-btn {
+    background: linear-gradient(135deg, #DC3545 0%, #c82333 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.remove-btn:hover {
+    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(220, 53, 69, 0.4);
+}
+
+.remove-btn i {
+    margin-right: 6px;
 }
 
 /* --------------------
@@ -139,39 +294,145 @@ main h1 {
    -------------------- */
 #searchButton {
     display: block;
-    margin: 30px auto;
-    background-color: #123D60; /* 검색 버튼: 진한 남색 */
+    margin: 40px auto;
+    background: linear-gradient(135deg, #123D60 0%, #0f2d47 100%);
     color: white;
-    padding: 15px 40px;
+    padding: 18px 60px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s;
+    font-size: 1.25em;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(18, 61, 96, 0.3);
+    letter-spacing: 0.3px;
 }
 
+#searchButton:hover:not(:disabled) {
+    background: linear-gradient(135deg, #31A9DB 0%, #2a8fc4 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(49, 169, 219, 0.4);
+}
+
+#searchButton:active:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+#searchButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* 로딩 오버레이 */
 #loadingOverlay {
-    position: fixed; /* 이 코드가 있어야 화면에 고정됩니다. */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* 반투명 흰색 오버레이 */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
+#loadingSpinner {
+    text-align: center;
+    background: white;
+    padding: 50px 70px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(18, 61, 96, 0.15);
+}
+
 #loadingSpinner .fa-spin {
     color: #31A9DB;
-    font-size: 3em; /*  이 코드가 스피너 크기를 키웁니다. */
-    margin-bottom: 15px;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+
+#loadingSpinner p {
+    color: #5a6c7d;
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: 500;
 }
 
 /* --------------------
    유틸리티 클래스
    -------------------- */
 .hidden {
-    display: none !important; /* 이 코드가 요소를 화면에서 숨깁니다. */
+    display: none !important;
+}
+
+/* --------------------
+   반응형 디자인 (모바일)
+   -------------------- */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px 25px;
+        margin: 15px 0;
+        border-radius: 12px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 1.3em;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    main h1 {
+        font-size: 1.6em;
+        margin-top: 30px;
+    }
+
+    .subtitle {
+        font-size: 0.95em;
+        margin-bottom: 35px;
+    }
+
+    .drop-area {
+        padding: 50px 25px;
+        max-width: 100%;
+    }
+
+    .fa-upload {
+        font-size: 2.5em !important;
+    }
+
+    #searchButton {
+        width: 100%;
+        padding: 16px 30px;
+        font-size: 1.1em;
+    }
+
+    #loadingSpinner {
+        padding: 40px 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo .slogan {
+        display: none;
+    }
+
+    main h1 {
+        font-size: 1.4em;
+    }
+
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
 }
