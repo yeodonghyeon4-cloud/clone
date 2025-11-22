@@ -1,0 +1,202 @@
+
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    background-color: #fff;
+    padding: 20px 40px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------
+   2. 헤더 및 로고 (index.html과 통일)
+   -------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #123D60;
+    display: flex;
+    align-items: baseline;
+}
+
+.en-name {
+    font-size: 0.7em;
+    color: #31A9DB;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.slogan {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #777;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.back-btn {
+    color: #31A9DB; /* 새로운 검색 버튼 강조 */
+    font-weight: bold;
+}
+
+/* --------------------
+   3. 메인 타이틀 및 레이아웃
+   -------------------- */
+main h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #123D60;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #31A9DB;
+    padding-bottom: 10px;
+}
+
+/* 핵심: Flexbox를 이용한 좌우 배치 */
+.results-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.search-image-area {
+    width: 30%; /* 검색 이미지 영역 */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-list-area {
+    width: 70%; /* 결과 목록 영역 */
+    padding: 20px 0;
+}
+
+.search-image-area h3, .product-list-area h3 {
+    color: #123D60;
+    font-size: 1.2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* --------------------
+   4. 이미지 및 요약 스타일
+   -------------------- */
+#searchedImage {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+#resultSummary {
+    padding: 10px;
+    background-color: #f0f7ff;
+    border-left: 5px solid #31A9DB;
+    font-size: 0.9em;
+    color: #123D60;
+    margin-top: 15px;
+}
+
+/* --------------------
+   5. 상품 목록 Grid 및 카드 스타일
+   -------------------- */
+#resultsGrid {
+    display: grid;
+    /* 화면 크기에 따라 2열 또는 3열로 유동적 배치 */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h4 {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: #333;
+    height: 2.8em; /* 2줄 고정 */
+    overflow: hidden;
+}
+
+.similarity-score {
+    font-weight: bold;
+    color: #31A9DB; /* 유사도 점수: 밝은 파란색 */
+    font-size: 1.1em;
+}
+
+.price {
+    font-size: 1.3em;
+    color: #DC3545; /* 최저가: 빨간색 */
+    font-weight: 800;
+    margin: 5px 0 10px 0;
+}
+
+.buy-btn {
+    display: block;
+    text-align: center;
+    background-color: #123D60;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #31A9DB;
+}
