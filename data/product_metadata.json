@@ -151,5 +151,59 @@
     "category": "Hats",
     "product_url": "https://ko.aliexpress.com/item/1005009872574067.html?spm=a2g0o.imagesearchproductlist.main.15.79adlBhWlBhWGq&algo_pvid=a390e343-6141-4827-8d95-e30249be0128&algo_exp_id=a390e343-6141-4827-8d95-e30249be0128&pdp_ext_f=%7B%22order%22%3A%224%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21KRW%219318%212227%21%21%216.15%211.47%21%40212e520d17637867103753245efc1d%2112000050434670814%21sea%21KR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A388529b7%3Bm03_new_user%3A-29895%3BpisId%3A5000000192023066&curPageLogUid=GU2GOzenL8on&utparam-url=scene%3Aimage_search%7Cquery_from%3Apc_web_image_search%7Cx_object_id%3A1005009872574067%7C_p_origin_prod%3A",
     "image_filename": "LOGO LINEN SHORT BEANIE IN BLACK_006.jpg"
+  },
+  {
+    "id": "cardigan_red_001",
+    "name": "밸라 비비드 라운드넥 꽈배기 가디건",
+    "brand": "Queenit",
+    "price": 29900,
+    "category": "cardigan",
+    "product_url": "https://web.queenit.kr/product/89a47b748d1ef8889c7a180a586a24cb",
+    "image_filename": "cardigan_red_001.jpg"
+  },
+  {
+    "id": "cardigan_red_002",
+    "name": "여성용 캐주얼 케이블 카디건 - 갈색 단추, 라운드 넥 솔리드 컬러 스웨터, 가을 겨울 레이어링용 편안한 핏, 코지 니트웨어, 시대를 초월하는 따뜻한 니트, 가을 옷장",
+    "brand": "TEMU",
+    "price": 24641,
+    "category": "cardigan",
+    "product_url": "https://www.temu.com/kr/여성용-캐주얼-케이블-카디건-갈색-단추-라운드-넥-솔리드-컬러-스웨터-가을-겨울-레이어링용-편안한-핏-코지-니트웨어-시대를-초월하는-따뜻한-니트-가을-옷장-g-601099837853279.html?reloadCount=1&refer_page_name=goods&refer_page_id=10032_1763538587849_1o4yqpxtff&refer_page_sn=10032&_x_sessn_id=bkss5k0qcu",
+    "image_filename": "cardigan_red_002.jpg"
+  },
+  {
+    "id": "cardigan_red_003",
+    "name": "2024年早春秋季新爆款女装毛衣外套宽松减龄漂亮洋气上衣针织开衫",
+    "brand": "1688",
+    "price": 8681,
+    "category": "cardigan",
+    "product_url": "https://detail.1688.com/offer/702452884159.html?spm=a26352.b28411319.offerlist.2.71bb1e62voVwHW",
+    "image_filename": "cardigan_red_003.jpg"
+  },
+  {
+    "id": "cardigan_red_polo",
+    "name": "Polo Ralph Lauren cable-knit cardigan",
+    "brand": "FARFETCH",
+    "price": 376832,
+    "category": "cardigan",
+    "product_url": "https://www.farfetch.com/id/shopping/women/polo-ralph-lauren-cable-knit-cardigan-item-30628039.aspx",
+    "image_filename": "cardigan_red_polo.jpg"
+  },
+  {
+    "id": "cardigan_red_004",
+    "name": "Women Clothing O-neck Fried Dough Twist Knitted Cardigan Autumn Winter Vintage Chic Horn Button Sweaters Fashion",
+    "brand": "DHGate.com",
+    "price": 52403,
+    "category": "cardigan",
+    "product_url": "https://www.dhgate.com/product/women-clothing-o-neck-fried-dough-twist-knitted/1018544890.html?dspm=pcen.seo-pd.buyitnow.1.kK2WXZKJnQ6JeotzRnBp&resource_id=&skuId=1294224531791192099",
+    "image_filename": "cardigan_red_004.jpg"
+  },
+  {
+    "id": "cardigan_red_005",
+    "name": "SHEIN LUNE 새해 옷을 위한 트위스트 니트 패턴의 여성 솔리드 컬러 버튼 프런트 가디건, 긴팔 탑",
+    "brand": "SHEIN",
+    "price": 10926,
+    "category": "cardigan",
+    "product_url": "https://kr.shein.com/SHEIN-LUNE-Women-s-Solid-Color-Button-Front-Cardigan-With-Twisted-Knitting-Pattern-For-New-Year-Clothes-Long-Sleeve-Tops-Fall-Winter-Cloth-For-Women-p-31759877.html?src_identifier=st%3D2%60sc%3D%EA%BD%88%EB%B0%B0%EA%B8%B0%20%EA%B0%80%EB%94%94%EA%B1%B4%20%EB%A0%88%EB%93%9C%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1763804246292&mallCode=1&pageListType=4&imgRatio=3-4&detailBusinessFrom=0-1_31759877%7C0-2&pageListType=4",
+    "image_filename": "cardigan_red_005.jpg"
   }
 ]

@@ -1,0 +1,31 @@
+# ZABATDA MVP - Python Dependencies
+# Python 3.13+ required
+
+# Web Framework
+flask>=3.1.2
+flask-cors>=6.0.1
+
+# AI/ML - CLIP Model
+sentence-transformers>=5.1.2
+torch>=2.0.0
+
+# Image Processing
+pillow>=12.0.0
+
+# Scientific Computing
+numpy>=2.3.5
+scikit-learn>=1.7.2
+
+# Database
+psycopg2-binary>=2.9.11
+
+# Environment Management
+python-dotenv>=1.2.1
+
+# Optional: Testing dependencies (not required for production)
+# Uncomment if you need to run tests
+# rembg>=2.0.68
+# onnxruntime>=1.23.2
+# fashion-clip>=0.2.2
+# ultralytics>=8.0.239
+# ultralyticsplus>=0.1.0
