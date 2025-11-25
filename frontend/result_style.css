@@ -175,6 +175,58 @@ main h1 {
     border: 2px solid #31A9DB;
 }
 
+/* View Toggle Buttons */
+.view-toggle-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #f8fcff 0%, #f0f7ff 100%);
+    border-radius: 12px;
+    border: 2px solid #e8f1f8;
+}
+
+.view-toggle-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #5a6c7d;
+    background: white;
+    border: 2px solid #e8f1f8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.view-toggle-btn:hover {
+    background: #f0f7ff;
+    border-color: #31A9DB;
+    color: #123D60;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(49, 169, 219, 0.2);
+}
+
+.view-toggle-btn.active {
+    background: linear-gradient(135deg, #31A9DB 0%, #17a2b8 100%);
+    border-color: #31A9DB;
+    color: white;
+    box-shadow: 0 4px 12px rgba(49, 169, 219, 0.3);
+}
+
+.view-toggle-btn.active:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(49, 169, 219, 0.4);
+}
+
+.view-toggle-btn i {
+    font-size: 1.1em;
+}
+
 /* --------------------
    4. 이미지 및 요약 스타일
    -------------------- */

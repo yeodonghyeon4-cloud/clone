@@ -38,6 +38,17 @@
 
                 <section class="product-list-area" role="main">
                     <h3>유사 상품 목록 <span id="resultCount"></span></h3>
+
+                    <!-- View Toggle Buttons -->
+                    <div class="view-toggle-container">
+                        <button class="view-toggle-btn active" id="sortBySimilarityBtn" onclick="switchView('similarity')">
+                            <i class="fas fa-chart-line"></i> 유사도 순
+                        </button>
+                        <button class="view-toggle-btn" id="sortByPriceBtn" onclick="switchView('price')">
+                            <i class="fas fa-tag"></i> 가격 순
+                        </button>
+                    </div>
+
                     <div id="resultsGrid" role="list">
                         <!-- JavaScript will populate product cards here -->
                         <!-- Example product card structure:

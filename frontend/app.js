@@ -21,6 +21,10 @@ const SEARCH_RESULTS_LIMIT = 5;
 // Debug mode
 const DEBUG = true;
 
+// View mode state
+let currentView = 'similarity'; // 'similarity' or 'price'
+let currentResults = []; // Store current results for re-sorting
+
 function log(...args) {
   if (DEBUG) console.log('[ZABATDA]', ...args);
 }
@@ -445,6 +449,9 @@ function initializeResultsPage() {
 function displayResults(results, uploadedImageUrl) {
   log('Displaying results:', results.length, 'products');
 
+  // Store results globally for view switching
+  currentResults = [...results];
+
   // Display uploaded image
   const searchedImage = document.getElementById('searchedImage');
   if (searchedImage) {
@@ -480,24 +487,69 @@ function displayResults(results, uploadedImageUrl) {
     resultCount.textContent = results.length;
   }
 
-  // Display product cards
+  // Render products based on current view
+  renderProducts(results);
+
+  log('Results displayed successfully');
+}
+
+/**
+ * Render product cards based on current view mode
+ * @param {Array} results - Products to render
+ */
+function renderProducts(results) {
   const resultsGrid = document.getElementById('resultsGrid');
-  if (resultsGrid) {
-    if (results.length === 0) {
-      resultsGrid.innerHTML = `
-        <div style="grid-column: 1/-1; text-align: center; padding: 40px;">
-          <p style="font-size: 18px; color: #5a6c7d;">유사한 제품을 찾지 못했습니다.</p>
-          <p style="color: #999;">다른 이미지로 다시 시도해보세요.</p>
-        </div>
-      `;
+  if (!resultsGrid) return;
+
+  if (results.length === 0) {
+    resultsGrid.innerHTML = `
+      <div style="grid-column: 1/-1; text-align: center; padding: 40px;">
+        <p style="font-size: 18px; color: #5a6c7d;">유사한 제품을 찾지 못했습니다.</p>
+        <p style="color: #999;">다른 이미지로 다시 시도해보세요.</p>
+      </div>
+    `;
+  } else {
+    resultsGrid.innerHTML = results.map((product, index) =>
+      createProductCard(product, index)
+    ).join('');
+  }
+}
+
+/**
+ * Switch between similarity and price view modes
+ * @param {string} viewMode - 'similarity' or 'price'
+ */
+function switchView(viewMode) {
+  log('Switching view to:', viewMode);
+
+  currentView = viewMode;
+
+  // Update button active states
+  const similarityBtn = document.getElementById('sortBySimilarityBtn');
+  const priceBtn = document.getElementById('sortByPriceBtn');
+
+  if (similarityBtn && priceBtn) {
+    if (viewMode === 'similarity') {
+      similarityBtn.classList.add('active');
+      priceBtn.classList.remove('active');
     } else {
-      resultsGrid.innerHTML = results.map((product, index) =>
-        createProductCard(product, index)
-      ).join('');
+      priceBtn.classList.add('active');
+      similarityBtn.classList.remove('active');
     }
   }
 
-  log('Results displayed successfully');
+  // Sort and re-render results
+  let sortedResults;
+  if (viewMode === 'price') {
+    // Sort by price (ascending - cheapest first)
+    sortedResults = [...currentResults].sort((a, b) => a.price - b.price);
+  } else {
+    // Sort by similarity (descending - best match first)
+    sortedResults = [...currentResults].sort((a, b) => b.similarity - a.similarity);
+  }
+
+  renderProducts(sortedResults);
+  log('View switched successfully to:', viewMode);
 }
 
 /**
