@@ -20,6 +20,23 @@ from typing import List, Dict, Optional, Any
 load_dotenv()
 
 
+def get_env_var(key: str) -> str:
+    """
+    Get environment variable from either Streamlit secrets or os.environ.
+    Streamlit Cloud uses st.secrets, local dev uses .env file.
+    """
+    # Try Streamlit secrets first (for Streamlit Cloud deployment)
+    try:
+        import streamlit as st
+        if hasattr(st, 'secrets') and key in st.secrets:
+            return st.secrets[key]
+    except (ImportError, Exception):
+        pass
+
+    # Fall back to environment variables (for local development)
+    return os.getenv(key, '')
+
+
 def get_db_connection():
     """
     Create and return a connection to the Supabase PostgreSQL database.
@@ -47,17 +64,17 @@ def get_db_connection():
         'SUPABASE_DB_PASSWORD'
     ]
 
-    missing_vars = [var for var in required_vars if not os.getenv(var)]
+    missing_vars = [var for var in required_vars if not get_env_var(var)]
     if missing_vars:
         raise ValueError(f"Missing required environment variables: {', '.join(missing_vars)}")
 
     try:
         conn = psycopg2.connect(
-            host=os.getenv('SUPABASE_DB_HOST'),
-            port=os.getenv('SUPABASE_DB_PORT'),
-            database=os.getenv('SUPABASE_DB_NAME'),
-            user=os.getenv('SUPABASE_DB_USER'),
-            password=os.getenv('SUPABASE_DB_PASSWORD')
+            host=get_env_var('SUPABASE_DB_HOST'),
+            port=get_env_var('SUPABASE_DB_PORT'),
+            database=get_env_var('SUPABASE_DB_NAME'),
+            user=get_env_var('SUPABASE_DB_USER'),
+            password=get_env_var('SUPABASE_DB_PASSWORD')
         )
         return conn
     except psycopg2.Error as e:

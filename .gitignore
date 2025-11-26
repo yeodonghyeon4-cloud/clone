@@ -10,6 +10,9 @@ wheels/
 .venv
 .env
 
+# Streamlit secrets (do not commit!)
+.streamlit/secrets.toml
+
 # Claude-Related files
 .claude
 CLAUDE.md
